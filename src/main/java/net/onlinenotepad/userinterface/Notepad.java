@@ -11,4 +11,5 @@ public class Notepad {
     public static final Target OPTIONLIST = Target.the("Texto").locatedBy("(//button[@id=\"tasklist-tab\"])[1]");
 
     public static final Target DELETE = Target.the("Texto").locatedBy("//img[@class=\"me-2 remove_list_item\"]");
+    public static final Target SEARCH = Target.the("Prueba").locatedBy("//span[@style=\"width:95%;word-break:break-word\"]");
 }

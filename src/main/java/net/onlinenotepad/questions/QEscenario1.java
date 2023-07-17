@@ -9,7 +9,7 @@ public class QEscenario1 implements Question<String> {
 
     @Override
     public String answeredBy(Actor actor) {
-        return Text.of(Notepad.TEXT).viewedBy(actor).asString();
+        return Text.of(Notepad.SEARCH).viewedBy(actor).asString();
     }
     public static QEscenario1 in(){return new QEscenario1();}
 }

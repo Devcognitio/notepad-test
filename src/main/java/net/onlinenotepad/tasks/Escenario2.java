@@ -13,7 +13,7 @@ public class Escenario2  implements Task {
         actor.attemptsTo(
                 Click.on(Notepad.OPTIONLIST),
                 Click.on(Notepad.LIST),
-                Enter.theValue("1Prueba").into(Notepad.LIST),
+                Enter.theValue("Prueba").into(Notepad.LIST),
                 Click.on(Notepad.ADDLIST),
                 Click.on(Notepad.LIST),
                 Enter.theValue("Hola").into(Notepad.LIST),
@@ -28,9 +28,13 @@ public class Escenario2  implements Task {
                 Enter.theValue("3Prueba").into(Notepad.LIST),
                 Click.on(Notepad.ADDLIST),
                 Click.on(Notepad.LIST),
-                Enter.theValue("PPrueba").into(Notepad.LIST),
+                Enter.theValue("Prueba").into(Notepad.LIST),
                 Click.on(Notepad.ADDLIST),
+                Click.on(Notepad.DELETE),
+                Click.on(Notepad.DELETE),
+                Click.on(Notepad.DELETE),
                 Click.on(Notepad.DELETE)
+
 
 
         );
