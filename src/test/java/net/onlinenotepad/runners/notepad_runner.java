@@ -1,6 +1,8 @@
 package net.onlinenotepad.runners;
 
-import io.cucumber.junit.CucumberOptions;
+import cucumber.api.CucumberOptions;
+
+import cucumber.api.SnippetType;
 import net.serenitybdd.cucumber.CucumberWithSerenity;
 import org.junit.runner.RunWith;
 
@@ -8,7 +10,8 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = "src/test/resources/features/my-devco-feature.feature",
         glue = "net.onlinenotepad.stepdefinitions",
-        snippets = CucumberOptions.SnippetType.CAMELCASE
+        snippets = SnippetType.CAMELCASE,
+        tags = "@Escenario2"
 )
 public class notepad_runner {
 }
